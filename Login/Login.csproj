@@ -1,0 +1,229 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{A073815E-E314-486D-B56D-899C980D4C98}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>Login</RootNamespace>
+    <AssemblyName>Login</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Bunifu_UI_v1.5.3">
+      <HintPath>..\..\..\..\Downloads\Bnfu_1.5.3\Bnfu_1.5.3_crack\Bunifu_UI_v1.5.3.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.VisualBasic" />
+    <Reference Include="MySql.Data, Version=8.0.25.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Management" />
+    <Reference Include="System.Windows.Forms.DataVisualization" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Danısman.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Danısman.Designer.cs">
+      <DependentUpon>Danısman.cs</DependentUpon>
+    </Compile>
+    <Compile Include="danısman_panel.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="danısman_panel.Designer.cs">
+      <DependentUpon>danısman_panel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Doktor_ekle.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Doktor_ekle.Designer.cs">
+      <DependentUpon>Doktor_ekle.cs</DependentUpon>
+    </Compile>
+    <Compile Include="doktor_kisisel_ayarlar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="doktor_kisisel_ayarlar.Designer.cs">
+      <DependentUpon>doktor_kisisel_ayarlar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="doktor_panel.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="doktor_panel.Designer.cs">
+      <DependentUpon>doktor_panel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Login.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Login.Designer.cs">
+      <DependentUpon>Login.cs</DependentUpon>
+    </Compile>
+    <Compile Include="mailgonder.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="mailgonder.Designer.cs">
+      <DependentUpon>mailgonder.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Yonetici.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Yonetici.Designer.cs">
+      <DependentUpon>Yonetici.cs</DependentUpon>
+    </Compile>
+    <Compile Include="poliklinik_ekle.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="poliklinik_ekle.Designer.cs">
+      <DependentUpon>poliklinik_ekle.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="sil_guncelle.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="sil_guncelle.Designer.cs">
+      <DependentUpon>sil_guncelle.cs</DependentUpon>
+    </Compile>
+    <Compile Include="yoneticiekle.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="yoneticiekle.Designer.cs">
+      <DependentUpon>yoneticiekle.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Danısman.resx">
+      <DependentUpon>Danısman.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="danısman_panel.resx">
+      <DependentUpon>danısman_panel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Doktor_ekle.resx">
+      <DependentUpon>Doktor_ekle.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="doktor_kisisel_ayarlar.resx">
+      <DependentUpon>doktor_kisisel_ayarlar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="doktor_panel.resx">
+      <DependentUpon>doktor_panel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Login.resx">
+      <DependentUpon>Login.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="mailgonder.resx">
+      <DependentUpon>mailgonder.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="poliklinik_ekle.resx">
+      <DependentUpon>poliklinik_ekle.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Yonetici.resx">
+      <DependentUpon>Yonetici.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="sil_guncelle.resx">
+      <DependentUpon>sil_guncelle.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="yoneticiekle.resx">
+      <DependentUpon>yoneticiekle.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\img_yükle.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ac.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\setting_white.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\setting-black.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\person.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pol_icon.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icon-klinik-png-2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\close_white.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\doctor.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\setting-black1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\img_568523.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\garbage-bin-png-10507.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Mail-03.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\tick_white.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\file_upload.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\send_icon.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
